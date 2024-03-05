@@ -1,0 +1,19 @@
+.outred {
+	outline: 5px solid red !important;
+}
+
+.outblue {
+	outline: 5px solid blue !important;
+}
+
+.outgreen {
+	outline: 5px solid green !important;
+}
+
+.outorange {
+	outline: 5px solid orange !important;
+}
+
+.outgrey {
+	outline: 3px solid grey !important;
+}

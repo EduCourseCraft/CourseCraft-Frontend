@@ -1,0 +1,65 @@
+.btn2 {
+ font-size: 20px;
+ background: #4E1BBC;
+ color: #fff;
+ display: inline-block;
+ padding: 6px 22px;
+ border-radius: 5px;
+ border: none;
+ transition: background-color 0.3s ease, color 0.75s ease;
+ transform: 0.3s ease;
+
+ &.btn-modify {
+  background-color: #FFFF66;
+
+  &:hover {
+   background-color: #FFFF99;
+   color: #FFFF66;
+  }
+ }
+
+ &.btn-delete {
+  &:hover {
+   background-color: #ff6f21;
+   color: #fff;
+  }
+ }
+
+ &:hover {
+  transform: translateY(-2px);
+  transition: transform 0.75s ease;
+ }
+}
+
+body.swal2-shown {
+ padding-right: 0 !important;
+}
+
+.btn-status {
+ @extend .btn2;
+ background-color: #e4e4e4;
+
+ .toggle-off {
+  color: red;
+ }
+
+ .toggle-on {
+  color: green;
+ }
+}
+
+.table-container {
+ max-width: 100%;
+}
+
+.rdt_TableCol {
+ font-size: 16px !important;
+}
+
+.rdt_TableCell {
+ font-size: 16px !important;
+}
+
+.jUVdIZ {
+ justify-content: center !important;
+}
