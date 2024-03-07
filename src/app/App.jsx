@@ -17,6 +17,7 @@ import Modify from "../pages/modify";
 import AdminAllCourses from "../pages/admin-all-courses";
 import AuthGuard from "../components/Auth/AuthGuard";
 import AdminGuard from "../components/Auth/AdminGuard";
+import Course from "../pages/course-flow";
 
 const App = () => {
  const [userRole, setUserRole] = useState("user");
@@ -27,13 +28,14 @@ const App = () => {
    <BrowserRouter>
     <LoadTop />
     <Switch>
+     <Route path="/about-2" component={AboutTwo} />
+     <Route path="/course-flow" component={Course} />
      <Route path="/login" component={Login} />
      <Route path="/register" component={Register} />
      <AuthGuard isAuthenticated={isAuthenticated}>
       <Switch>
        <Route path="/" exact component={Home} />
        <Route path="/home" component={Home} />
-       <Route path="/about-2" component={AboutTwo} />
        <Route path="/cursos" component={CourseTwo} />
        <Route path="/contact-2" component={ContactTwo} />
        <Route path="/course/course-single/:id" component={CourseSingle} />
@@ -55,12 +57,10 @@ const App = () => {
 
 export default App;
 
-
-
 // npx browserslist@latest --update-db
 
 /*
-
+ff5421
 import About from "../pages/about";
 import CourseOne from "../pages/course";
 import CourseThree from "../pages/course-3";
@@ -126,5 +126,3 @@ import ContactFour from "../pages/contact-4";
 <Route path="/contact-3" component={ContactThree} />
 <Route path="/contact-4" component={ContactFour} />
 */
-
-
