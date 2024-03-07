@@ -18,6 +18,7 @@ import footerLogo from "../assets/img/logo/lite-logo.png";
 
 import bannerbg from '../assets/img/breadcrumbs/2.jpg';
 import bcrypt from 'bcryptjs'
+import ButtonLoadingIndicator from "../components/Placeholder/ButtonLoadingIndicator";
 
 const initialRegisterData = {
     firstName: "",
@@ -31,7 +32,7 @@ const initialRegisterData = {
 
 const Register = () => {
 	const [loading, setLoading] = useState(false);
-	const [registerData, setRegisterData] = useState(initialRegisterData2);
+	const [registerData, setRegisterData] = useState(initialRegisterData);
 	const history = useHistory();
 
 	const handleInputChange = (e) => {
